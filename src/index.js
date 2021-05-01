@@ -1,14 +1,12 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import SeasonDisplay from "./weathers/SeasonDisplay"
+import App4 from "./pics/App"
 
 const App = () =>
 {
-    return (
-        <div>
-            <SeasonDisplay />
-        </div>
-    )
+    return <div>
+        <App4 />
+    </div>
 }
 
 ReactDOM.render(<App />, document.querySelector("#root"))

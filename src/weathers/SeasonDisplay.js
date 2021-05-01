@@ -18,7 +18,7 @@ export class SeasonDisplay extends Component
             err => this.setState({ errorMsg: err.message })
         );
     }
-    render()
+    renderText()
     {
         if (!this.state.lat) {
             return <div>Error: {this.state.errorMsg}</div>
@@ -29,6 +29,12 @@ export class SeasonDisplay extends Component
         else {
             return <Spinner message="Please accept location request." />
         }
+    }
+    render()
+    {
+        return <div>
+            {this.renderText()}
+        </div>
     }
 }
 
