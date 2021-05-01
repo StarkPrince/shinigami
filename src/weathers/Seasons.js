@@ -28,11 +28,11 @@ function Seasons(props)
 {
 
     var sea = getSeason(props.lat, new Date().getMonth());
-    const { text, iconName, pic } = seasonConfig[sea];
+    const { text, iconName } = seasonConfig[sea];
     return (
         <div className={`seasonDisplay ${sea}`} >
             <i className={`${iconName} icon-left massive icon`} />
-            { sea === "summer" ? <img src={summer} /> : <img src={winter} />}
+            { sea === "summer" ? <img src={summer} alt="summer" /> : <img src={winter} alt="winter" />}
             <div>< h1 > {text}</h1 ></div>
             <i className={`${iconName} icon-right massive icon`} />
         </div >
