@@ -1,11 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import App4 from "./pics/App"
+import App1 from "./videos/App"
 
 const App = () =>
 {
     return <div>
-        <App4 />
+        <App1 />
     </div>
 }
 
