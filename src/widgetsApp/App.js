@@ -1,6 +1,7 @@
-import React from 'react'
-// import Accordion from "./Accordion"
+import React, { useState } from 'react'
+import Accordion from "./Accordion"
 import Search from './Search'
+import Dropdown from "./Dropdown"
 
 // eslint-disable-next-line
 const items = [{
@@ -20,13 +21,24 @@ const items = [{
     content: 'To sum this up: Reactjs shines in building dynamic and engaging web interfaces and triumphs over other javascript frameworks (such as Angular, Ember). '
 }]
 
-
+const options = [{
+    label: 'Blood Red',
+    value: 'red'
+},
+{
+    label: 'Grassy Green',
+    value: 'green'
+}, {
+    label: 'A shade of Blue',
+    value: 'blue'
+}]
 function App()
 {
+    const [selected, setSelected] = useState(options[0])
     return (
         <div>
             {/* <Accordion items={items} /> */}
-            <Search />
+            <Dropdown selected={selected} onSelectedChange={setSelected} options={options} />
         </div>
     )
 }

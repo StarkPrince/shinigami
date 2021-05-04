@@ -1,5 +1,4 @@
 import axios from 'axios'
-import { time } from 'faker'
 import React, { useState, useEffect } from 'react'
 
 function Search()
@@ -10,14 +9,8 @@ function Search()
 
     useEffect(() =>
     {
-        const timerId = setTimeout(() =>
-        {
-            setDebouncedTerm(term)
-        }, 1000);
-        return () =>
-        {
-            clearTimeout(timerId)
-        }
+        const timerId = setTimeout(() => setDebouncedTerm(term), 1000);
+        return () => clearTimeout(timerId)
     }, [term])
 
     useEffect(() =>
