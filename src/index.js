@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import App1 from "./videos/App"
+import App1 from "./widgetsApp/App"
 
 const App = () =>
 {
