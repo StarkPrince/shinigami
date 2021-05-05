@@ -9,7 +9,7 @@ function Search()
 
     useEffect(() =>
     {
-        const timerId = setTimeout(() => setDebouncedTerm(term), 1000);
+        const timerId = setTimeout(() => setDebouncedTerm(term), 500);
         return () => clearTimeout(timerId)
     }, [term])
 
@@ -29,20 +29,9 @@ function Search()
                 });
             setResults(data.query.search);
         }
-        search();
-        // if (debouncedTerm && !results.length) {
-        //     search()
-        // }
-        // else {
-        //     const timeoutId = setTimeout(() =>
-        //     {
-        //         if (debouncedTerm) {
-        //             search()
-        //         }
-        //     }, 500)
-
-        //     return () => clearTimeout(timeoutId);
-        // }
+        if (debouncedTerm && !results.length) {
+            search();
+        }
     }, [debouncedTerm])
 
     const renderedResults = results.map(result =>
