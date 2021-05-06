@@ -5,6 +5,8 @@ import Dropdown from "./Dropdown"
 import ColorChanger from "./ColorChanger"
 import Translate from "./Translate"
 import "./App.css"
+import Route from "./Route"
+import Header from './Header'
 
 // eslint-disable-next-line
 const items = [{
@@ -32,10 +34,15 @@ function App()
 
     return (
         <div>
-            {url === "/" ? <Accordion items={items} /> : null}
+            <Header />
+            {/* {url === "/" ? <Accordion items={items} /> : null}
             {url === "/search" ? <Search /> : null}
             {url === "/colorchanger" ? <ColorChanger /> : null}
-            {url === "/translate" ? <Translate /> : null}
+            {url === "/translate" ? <Translate /> : null} */}
+            <Route path="/"> <Accordion items={items} /> </Route>
+            <Route path="/search"> <Search /> </Route>
+            <Route path="/colorchanger"> <ColorChanger /> </Route>
+            <Route path="/translate"> <Translate /> </Route>
         </div>
     )
 }
