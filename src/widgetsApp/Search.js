@@ -42,7 +42,7 @@ function Search()
                     href={`https://en.wikipedia.org?curid=${result.pageid}`}>Go</a>
             </div>
             <div className="content">
-                <div className="header">
+                <div className="header" style={{ color: '#0096FF', marginBottom: '1em' }}>
                     {result.title}
                 </div>
                 <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>

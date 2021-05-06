@@ -7,6 +7,9 @@ import Translate from "./Translate"
 import "./App.css"
 import Route from "./Route"
 import Header from './Header'
+import Video from "../videos/App"
+import Pics from "../pics/App"
+import Weather from "../weathers/App"
 
 // eslint-disable-next-line
 const items = [{
@@ -35,14 +38,12 @@ function App()
     return (
         <div>
             <Header />
-            {/* {url === "/" ? <Accordion items={items} /> : null}
-            {url === "/search" ? <Search /> : null}
-            {url === "/colorchanger" ? <ColorChanger /> : null}
-            {url === "/translate" ? <Translate /> : null} */}
             <Route path="/"> <Accordion items={items} /> </Route>
             <Route path="/search"> <Search /> </Route>
-            <Route path="/colorchanger"> <ColorChanger /> </Route>
             <Route path="/translate"> <Translate /> </Route>
+            <Route path="/video"> <Video /> </Route>
+            <Route path="/pics"> <Pics /> </Route>
+            <Route path="/weather"> <Weather /> </Route>
         </div>
     )
 }

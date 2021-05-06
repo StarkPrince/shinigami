@@ -2,11 +2,11 @@ import React from 'react'
 // import './assets/css/fonts.css';
 import "./NeonButton.css"
 
-function NeonButton()
+function NeonButton({ link, location })
 {
     return (
         <div>
-            <a href="#" class="neon-button">Neon</a>
+            <a href={link} class="neon-button">{location}</a>
         </div>
     )
 }
