@@ -36,7 +36,7 @@ function ColorChanger()
         <div>
             < Dropdown selected={selected} onSelectedChange={setSelected} options={options} label="Color" />
             <div className="sampleText" style={{ color: selected.value }}>
-                The quick brown fox jumps over the lazy dog!
+                Real Shit!
             </div>
         </div>
     )

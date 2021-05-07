@@ -29,7 +29,7 @@ function Search()
                 });
             setResults(data.query.search);
         }
-        if (debouncedTerm && !results.length) {
+        if (debouncedTerm) {
             search();
         }
     }, [debouncedTerm])
@@ -53,7 +53,7 @@ function Search()
         <div>
             <div className="ui form">
                 <div className="field">
-                    <label>Enter Search Term</label>
+                    <label style={{ color: '#0096FF', marginBottom: '1em' }}>Enter Search Term</label>
                     <input type="text"
                         value={term}
                         onChange={e => setTerm(e.target.value)}

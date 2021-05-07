@@ -1,5 +1,5 @@
 .sampleText{
-    margin-top: 250px;
+    margin-top: 150px;
     text-align: center;
     font-size: 4em;
 }
@@ -8,4 +8,8 @@
 }
 .wiki{
     color: #0096FF;
+}
+
+.ui.container{
+    margin-bottom: 2.5em;
 }

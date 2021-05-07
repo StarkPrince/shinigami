@@ -31,7 +31,7 @@ function Dropdown({ label, options, selected, onSelectedChange })
     return (
         <div ref={ref} className="ui form container">
             <div className="field">
-                <label className="label">Select a {label}</label>
+                <label className="label" style={{ color: '#0096FF', margin: '1em' }}>Select a {label}</label>
                 <div onClick={() => { setOpen(!open); }}
                     className={`ui selection dropdown ${open ? 'visible active' : ''}`}>
                     <i className="dropdown icon" />

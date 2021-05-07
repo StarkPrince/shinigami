@@ -30,7 +30,7 @@ const Translate = () =>
     return (<div>
         <div className="ui form container">
             <div className="field">
-                <label>Enter Text</label>
+                <label style={{ color: '#0096FF', margin: '1em' }}>Enter Text</label>
                 <input value={text} onChange={(e) => setText(e.target.value)} type="text" />
             </div>
         </div>

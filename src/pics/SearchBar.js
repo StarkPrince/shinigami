@@ -16,7 +16,7 @@ export class SearchBar extends Component
             <div className="ui segment">
                 <form className="ui form" onSubmit={this.onFormSubmit}>
                     <div className="field">
-                        <label htmlFor="searchBox">Image Search</label>
+                        <label htmlFor="searchBox" style={{ color: '#0096FF' }}>Image Search</label>
                         <input type="text" id="searchBox"
                             onClick={this.onInputClick}
                             value={this.state.term}

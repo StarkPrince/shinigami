@@ -6,7 +6,7 @@ function NeonButton({ link, location })
 {
     return (
         <div>
-            <a href={link} class="neon-button">{location}</a>
+            <a href={link} className="neon-button">{location}</a>
         </div>
     )
 }

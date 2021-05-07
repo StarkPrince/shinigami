@@ -20,7 +20,7 @@ const Convert = ({ language, text }) =>
         doTranslation();
     }, [language, text])
     return (< div className="ui container translatedText">
-        <h1 className="ui header">{translated}</h1>
+        <h1 className="ui header" style={{ color: '#0096FF', margin: '1em' }}>{translated}</h1>
     </div >)
 }
 
