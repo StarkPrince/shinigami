@@ -1,12 +1,10 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import App1 from "./widgetsApp/App"
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 
-const App = () =>
-{
-    return <div>
-        <App1 />
-    </div>
-}
+import App from "./components/App"
+import reducers from "./SongSelector/reducers"
 
-ReactDOM.render(<App />, document.querySelector("#root"))
+ReactDOM.render(<Provider store={createStore(reducers)}><App /></Provider>,
+    document.getElementById('root'))
