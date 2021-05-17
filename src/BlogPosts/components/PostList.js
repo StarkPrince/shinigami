@@ -2,29 +2,31 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 // import jsonPlaceHolder from '../apis/jsonPlaceHolder'
 import { fetchPosts } from '../actions'
-// import axios from
 
 class PostList extends Component
 {
-    componentDidMount = () => { fetchPosts() }
-
-    // fetchPosts()
+    componentDidMount = () => { this.props.fetchPosts() }
     renderList = () =>
     {
-        return this.props.posts.map(post =>
-        {
-            return (
-                <div className="item" key={post.id}>
-                    <i className="large middle aligned icon user" />
-                    <div className="content">
-                        <div className="description">
-                            <h2>{post.title}</h2>
-                            <p>{post.body}</p>
+        if (this.props.posts) {
+            return this.props.posts.map(post =>
+            {
+                return (
+                    <div className="item" key={post.id}>
+                        <i className="large middle aligned icon user" />
+                        <div className="content">
+                            <div className="description">
+                                <h2>{post.title}</h2>
+                                <p>{post.body}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            )
-        })
+                )
+            })
+        }
+        else {
+            return <div>Nothing recived till now</div>
+        }
     }
     render()
     {
@@ -32,7 +34,7 @@ class PostList extends Component
         return (
             <div className="ui relaxed divided list">
                 drug dealer
-                {/* {this.renderList()} */}
+                {this.renderList()}
             </div >
         )
     }
