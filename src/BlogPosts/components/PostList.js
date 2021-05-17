@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import jsonPlaceHolder from '../apis/jsonPlaceHolder'
+// import jsonPlaceHolder from '../apis/jsonPlaceHolder'
 import { fetchPosts } from '../actions'
 // import axios from
 
 class PostList extends Component
 {
-    componentDidMount()
-    { fetchPosts(); }
+    componentDidMount = () => { fetchPosts() }
 
+    // fetchPosts()
     renderList = () =>
     {
         return this.props.posts.map(post =>
