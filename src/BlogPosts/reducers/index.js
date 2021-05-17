@@ -1,5 +1,8 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
+import postsReducer from './postsReducer';
+// import usersReducer from './usersReducer';
 
 export default combineReducers({
-    prince: () => 'get nailed'
+    posts: postsReducer
+    // users: usersReducer
 });
