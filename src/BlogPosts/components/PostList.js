@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import jsonPlaceHolder from '../apis/jsonPlaceHolder'
 import { fetchPosts } from '../actions'
+// import axios from
 
 class PostList extends Component
 {
-    componentDidMount = () => this.props.fetchPosts();
+    componentDidMount()
+    { fetchPosts(); }
 
     renderList = () =>
     {
@@ -28,15 +31,19 @@ class PostList extends Component
         console.log(this.props.posts)
         return (
             <div className="ui relaxed divided list">
-                {this.renderList()}
+                drug dealer
+                {/* {this.renderList()} */}
             </div >
         )
     }
 }
 
-const mapStateToProps = (state) =>
+const mapStateToProps = state =>
 {
-    return { posts: state.posts }
-}
+    return { posts: state.posts };
+};
 
-export default connect(mapStateToProps, { fetchPosts })(PostList)
+export default connect(
+    mapStateToProps,
+    { fetchPosts }
+)(PostList);
