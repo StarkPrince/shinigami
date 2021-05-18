@@ -20,3 +20,17 @@ we are always going to make use of something like redux thunk
 the syntax here is like an awaited function nested inside of a async function
 
 # overfetching issue
+
+as a problem of overfetching we created an action creater that called another
+action creaters and we await and dispatch it during the call
+like : await dispatch(fetchUser(id))
+
+# about reducer
+
+the first argument is the state and it is whatever was returned last time the
+reducer was run and use a switch case statement inside of it
+
+# why always return a new array or object
+
+because js compare them by their reference not by their values so even if they
+are mutated they wont consider it and doesn't rerender the states
