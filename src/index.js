@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './BlogPosts'
+import App from './weathers'
 
-
-ReactDOM.render(<App />,
+ReactDOM.render(<div><App /></div>,
     document.querySelector('#root')
 );
