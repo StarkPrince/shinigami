@@ -52,9 +52,6 @@ export class GoogleAuth extends Component
                 <div className="item">
                     {this.renderAuth()}
                 </div>
-                <div className="item">
-                    {this.props.userId}
-                </div>
             </>
         )
     }
