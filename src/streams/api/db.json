@@ -1,39 +1,29 @@
 {
   "streams": [
     {
-      "title": "idk",
-      "description": "i dont know",
+      "title": "hurrah!",
+      "description": "i have done cheating",
       "id": 1
     },
     {
-      "title": "realme",
-      "description": "on of the best and budget smartphone company",
+      "title": "eureka",
+      "description": "i have found something new",
       "id": 2
     },
     {
-      "title": "aryan",
-      "description": "chopu manusya hai",
+      "description": "khusat insaan",
+      "title": "sk patel",
       "id": 3
     },
     {
-      "title": "hello",
-      "description": "its a greeting message",
+      "description": "maghia",
+      "title": "bangai",
       "id": 4
     },
     {
-      "title": "hello",
-      "description": "its a greeting message",
+      "title": "he he",
+      "description": "not ha ha",
       "id": 5
-    },
-    {
-      "title": "powerPluck",
-      "description": "no power girls  please",
-      "id": 6
-    },
-    {
-      "title": "powerPluck",
-      "description": "no power girls  please",
-      "id": 7
     }
   ]
 }

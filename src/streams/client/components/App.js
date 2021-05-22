@@ -1,28 +1,33 @@
-import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
-import StreamCreate from './streams/StreamCreate'
-import StreamEdit from './streams/StreamEdit'
-import StreamDelete from './streams/StreamDelete'
-import StreamList from './streams/StreamList'
-import StreamShow from './streams/StreamShow'
-import Header from './Header'
+import React from 'react';
+import { Router, Route, Switch } from 'react-router-dom';
+import StreamCreate from './streams/StreamCreate';
+import StreamEdit from './streams/StreamEdit';
+import StreamDelete from './streams/StreamDelete';
+import StreamList from './streams/StreamList';
+import StreamShow from './streams/StreamShow';
+import Header from '../../../Stephenstreams/client/src/components/Header';
+// import history from '../history';
 
-function index() 
+const App = () =>
 {
-    return (
-        <div className="ui container">
-            <BrowserRouter>
-                <div>
-                    <Header />
-                    <Route path='/' exact><StreamList /></Route>
-                    <Route path='/stream/new' exact><StreamCreate /></Route>
-                    <Route path='/stream/edit/:id' exact><StreamEdit /></Route>
-                    <Route path='/stream/:id' exact><StreamShow /></Route>
-                    <Route path='/stream/delete/:id' exact><StreamDelete /></Route>
-                </div>
-            </BrowserRouter>
+  return (
+    <div className="ui container">
+      {/* <Router history={history}> */}
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Switch>
+            <Route path="/" exact component={StreamList} />
+            <Route path="/streams/new" exact component={StreamCreate} />
+            <Route path="/streams/edit/:id" exact component={StreamEdit} />
+            <Route path="/streams/delete/:id" exact component={StreamDelete} />
+            <Route path="/streams/:id" exact component={StreamShow} />
+          </Switch>
         </div>
-    )
-}
+        {/* </Router> */}
+      </BrowserRouter>
+    </div>
+  );
+};
 
-export default index
+export default App;
