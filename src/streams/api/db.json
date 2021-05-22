@@ -1,0 +1,39 @@
+{
+  "streams": [
+    {
+      "title": "idk",
+      "description": "i dont know",
+      "id": 1
+    },
+    {
+      "title": "realme",
+      "description": "on of the best and budget smartphone company",
+      "id": 2
+    },
+    {
+      "title": "aryan",
+      "description": "chopu manusya hai",
+      "id": 3
+    },
+    {
+      "title": "hello",
+      "description": "its a greeting message",
+      "id": 4
+    },
+    {
+      "title": "hello",
+      "description": "its a greeting message",
+      "id": 5
+    },
+    {
+      "title": "powerPluck",
+      "description": "no power girls  please",
+      "id": 6
+    },
+    {
+      "title": "powerPluck",
+      "description": "no power girls  please",
+      "id": 7
+    }
+  ]
+}

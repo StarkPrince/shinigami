@@ -16,9 +16,9 @@ function index()
                     <Header />
                     <Route path='/' exact><StreamList /></Route>
                     <Route path='/stream/new' exact><StreamCreate /></Route>
-                    <Route path='/stream/edit' exact><StreamEdit /></Route>
-                    <Route path='/stream/show' exact><StreamShow /></Route>
-                    <Route path='/stream/delete' exact><StreamDelete /></Route>
+                    <Route path='/stream/edit/:id' exact><StreamEdit /></Route>
+                    <Route path='/stream/:id' exact><StreamShow /></Route>
+                    <Route path='/stream/delete/:id' exact><StreamDelete /></Route>
                 </div>
             </BrowserRouter>
         </div>

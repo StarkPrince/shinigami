@@ -28,7 +28,7 @@ export class GoogleAuth extends Component
             this.props.signIn(this.auth.currentUser.get().getId())
         }
         else {
-            this.props.signOut(this.auth.currentUser.get().getId());
+            this.props.signOut();
         }
     }
 
@@ -48,11 +48,9 @@ export class GoogleAuth extends Component
     {
 
         return (
-            <>
-                <div className="item">
-                    {this.renderAuth()}
-                </div>
-            </>
+            <div className="item">
+                {this.renderAuth()}
+            </div>
         )
     }
 }
