@@ -1,19 +1,19 @@
 import React from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch, Router } from 'react-router-dom';
 import StreamCreate from './streams/StreamCreate';
 import StreamEdit from './streams/StreamEdit';
 import StreamDelete from './streams/StreamDelete';
 import StreamList from './streams/StreamList';
 import StreamShow from './streams/StreamShow';
-import Header from '../../../Stephenstreams/client/src/components/Header';
-// import history from '../history';
+import Header from './Header';
+import history from '../history';
 
 const App = () =>
 {
   return (
     <div className="ui container">
-      {/* <Router history={history}> */}
-      <BrowserRouter>
+      <Router history={history}>
+        {/* <Router> */}
         <div>
           <Header />
           <Switch>
@@ -24,8 +24,8 @@ const App = () =>
             <Route path="/streams/:id" exact component={StreamShow} />
           </Switch>
         </div>
-        {/* </Router> */}
-      </BrowserRouter>
+      </Router>
+      {/* </BrowserRouter> */}
     </div>
   );
 };

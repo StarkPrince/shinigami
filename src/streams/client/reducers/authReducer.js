@@ -5,7 +5,7 @@ const INTIAL_STATE = {
     userId: null
 };
 
-export default (state = INTIAL_STATE, action) =>
+const prince = (state = INTIAL_STATE, action) =>
 {
     switch (action.type) {
         case SIGN_IN:
@@ -16,3 +16,5 @@ export default (state = INTIAL_STATE, action) =>
             return state;
     }
 };
+
+export default prince;
