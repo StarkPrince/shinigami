@@ -26,7 +26,7 @@
       "id": 5
     },
     {
-      "title": "hello",
+      "title": "hey",
       "description": "this is just a greeting msg",
       "userId": "115963442053012872465",
       "id": 6
@@ -38,15 +38,13 @@
       "id": 7
     },
     {
-      "title": "Ayan ",
+      "title": "Aryan ",
       "description": "Is my brother",
-      "userId": "115963442053012872465",
       "id": 8
     },
     {
-      "title": "mouse",
+      "title": "cars",
       "description": "is not a pet",
-      "userId": "115963442053012872465",
       "id": 9
     }
   ]
