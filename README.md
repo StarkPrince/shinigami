@@ -2,4 +2,4 @@
 
 http://trauma.surge.sh/
 
-http://momemtsbin.netlify.app
+http://momentsbin.netlify.app
