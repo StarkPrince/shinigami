@@ -1,1 +1,1 @@
-# https://www.momentsbin.netlify.app
+# https://momentsbin.netlify.app
