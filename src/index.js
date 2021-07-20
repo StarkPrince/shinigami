@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './memoriesProject/client'
+import App from './temp'
 
 ReactDOM.render(<div><App /></div>,
     document.querySelector('#root')
